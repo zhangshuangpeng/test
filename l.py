@@ -58,7 +58,7 @@ def tdengine_connection():
     except Exception as e:
         raise HTTPException(
             status_code=500,
-            detail=f"TDengine连接失败: {str(e)}"
+            detail=f"TDengine连接失 败: {str(e)}"
         )
     finally:
         if conn:
