@@ -8,7 +8,7 @@ conn = taos.connect(host=taos_config.host, user=taos_config.user, password=taos_
 cursor = conn.cursor()
 
 # 执行查询
-cursor.execute(' SELECT * FROM  md4x_7s.tb_654207003 limit 20')
+cursor.execute(' SELECT * FROM   md4x_7s.tb_654207003 limit 20')
 
 # 获取查询结果
 data = cursor.fetchall()
