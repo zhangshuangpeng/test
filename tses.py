@@ -2,7 +2,7 @@ from datetime import datetime, date
 from typing import List, Dict, Any, Tuple
 from fastapi import FastAPI, HTTPException, Query
 import taos
-from md4x.config.config import TaosConfig
+from config.config import TaosConfig
 from pydantic import BaseModel
 from contextlib import contextmanager
 
