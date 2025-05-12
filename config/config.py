@@ -13,7 +13,7 @@ class BaseConfig(BaseModel):
         arbitrary_types_allowed = True
 
     @classmethod
-    def parse_from_config(cls: T, config_path: str = r"E:\fastApiProject\md4x\config\config.yaml") -> T:
+    def parse_from_config(cls: T, config_path: str = r"config.yaml") -> T:
         if not os.path.exists(config_path):
             raise FileNotFoundError(f"配置文件未找到: {config_path}")
         with open(config_path, 'r', encoding='utf-8') as file:
