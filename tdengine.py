@@ -1,6 +1,6 @@
 import taos
 import pandas as pd
-from md4x.config.config import TaosConfig
+from config.config import TaosConfig
 
 taos_config = TaosConfig.parse_from_config()
 conn = taos.connect(host=taos_config.host, user=taos_config.user, password=taos_config.password)
